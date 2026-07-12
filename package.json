@@ -1,0 +1,31 @@
+{
+  "name": "ioe-hub",
+  "version": "1.0.0",
+  "description": "> **An all-in-one academic companion for Institute of Engineering (IOE) students.**",
+  "main": "index.js",
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ipshu-codes/IOE-HUB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ipshu-codes/IOE-HUB/issues"
+  },
+  "homepage": "https://github.com/Ipshu-codes/IOE-HUB#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+  
+}
