@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOE-Hub</title>
 
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
+<link rel="stylesheet" href="/static/style.css"></head>
 <body>
 
     <nav>
@@ -33,12 +32,42 @@
             Access notes, past questions, syllabus,
             notices and study resources from one place.
         </p>
+        <section class="stats">
 
-        <input
-            type="text"
-            placeholder="Search notes, subjects, notices..."
-        >
+    <div class="stat-card">
+        <h2>100+</h2>
+        <p>Study Notes</p>
+    </div>
 
+    <div class="stat-card">
+        <h2>8</h2>
+        <p>Semesters</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>500+</h2>
+        <p>Past Questions</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>24/7</h2>
+        <p>Access</p>
+    </div>
+
+</section>
+
+       
+<div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search notes, past questions, syllabus..."
+    >
+
+    <button onclick="searchResources()">Search</button>
+</div>
+
+<div id="results" class="results"></div>
     </section>
 
 
