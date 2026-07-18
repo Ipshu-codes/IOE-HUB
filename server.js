@@ -1,14 +1,15 @@
 const express = require("express");
-require("dotenv").config();
+const path = require("path");
 
 const app = express();
-
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
+// Serve static files
+app.use("/static", express.static(path.join(__dirname, "static")));
 
+// Home page
 app.get("/", (req, res) => {
-    res.send("IOE-Hub API is running ");
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.listen(PORT, () => {
