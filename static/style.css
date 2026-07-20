@@ -395,5 +395,19 @@ nav ul{
     font-size:32px;
 
 }
+.visit-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.visit-btn:hover{
+    background:#1d4ed8;
+}
 
 }
