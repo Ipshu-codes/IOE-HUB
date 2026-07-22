@@ -409,5 +409,14 @@ nav ul{
 .visit-btn:hover{
     background:#1d4ed8;
 }
+.feature-list{
+    margin-top:20px;
+    padding-left:20px;
+    line-height:2;
+    color:#555;
+}
 
+.feature-list li{
+    margin-bottom:8px;
+}
 }
