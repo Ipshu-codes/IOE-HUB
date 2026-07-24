@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | IOE-HUB</title>
+    <title>Sign Up | IOE-HUB</title>
 
     <link rel="stylesheet" href="static/style.css">
 </head>
@@ -12,9 +12,11 @@
 <body>
 
     <nav>
+
         <div class="logo">IOE-HUB</div>
 
         <ul>
+
             <li><a href="index.html">Home</a></li>
 
             <li>
@@ -36,25 +38,39 @@
             </li>
 
             <li><a href="about.html">About</a></li>
+
         </ul>
 
-        <button class="login-btn">Login</button>
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+
     </nav>
 
     <section class="login-section">
 
         <div class="login-card">
 
-            <h2>Welcome Back</h2>
+            <h2>Create Account</h2>
 
-            <p>Login to continue to IOE-HUB</p>
+            <p>Join IOE-HUB and access academic resources.</p>
 
-            <form>
+            <form id="signupForm">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
 
                 <label>Email</label>
 
                 <input
                     type="email"
+                    id="email"
                     placeholder="Enter your email"
                     required
                 >
@@ -63,23 +79,31 @@
 
                 <input
                     type="password"
-                    placeholder="Enter your password"
+                    id="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label>Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
                     required
                 >
 
                 <button type="submit" class="submit-btn">
-                    Login
+                    Create Account
                 </button>
 
             </form>
 
             <div class="login-links">
 
-                <a href="#">Forgot Password?</a>
-
                 <p>
-                Don't have an account?
-<a href="signup.html">Sign Up</a>
+                    Already have an account?
+                    <a href="login.html">Login</a>
                 </p>
 
             </div>
@@ -87,6 +111,8 @@
         </div>
 
     </section>
+
+    <script src="static/js/signup.js"></script>
 
 </body>
 
